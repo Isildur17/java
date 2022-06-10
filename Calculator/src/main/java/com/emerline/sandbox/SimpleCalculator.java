@@ -1,5 +1,7 @@
 package com.emerline.sandbox;
 
+import java.math.BigDecimal;
+
 public class SimpleCalculator {
     public static void main (String [] args) {
         CalculatorForActions calculation_results = new CalculatorForActions();

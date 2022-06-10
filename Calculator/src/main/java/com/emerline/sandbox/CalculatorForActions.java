@@ -1,9 +1,11 @@
 package com.emerline.sandbox;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 class CalculatorForActions implements Calculator {
-    private double calculationResult;
+    private float floatCalculationResult;
+    private double doubleCalculationResult;
 
     @Override
     public double getEnteredFirstValue() {
@@ -38,6 +40,7 @@ class CalculatorForActions implements Calculator {
     }
     @Override
     public double multiplicationOperation(double value1, double value2) {
+
         return value1 * value2;
     }
 
@@ -60,13 +63,16 @@ class CalculatorForActions implements Calculator {
     public void performCalculation(double value1, double value2, String operation) {
         switch (operation) {
             case "+":
-                calculationResult = additionOperation(value1, value2);
+                doubleCalculationResult = additionOperation(value1, value2);
+                floatCalculationResult = (float) doubleCalculationResult;
                 break;
             case "-":
-                calculationResult = subtractionOperation(value1, value2);
+                doubleCalculationResult = subtractionOperation(value1, value2);
+                floatCalculationResult = (float) doubleCalculationResult;
                 break;
             case "*":
-                calculationResult = multiplicationOperation(value1, value2);
+                doubleCalculationResult = multiplicationOperation(value1, value2);
+                floatCalculationResult = (float) doubleCalculationResult;
                 break;
             case "/":
                 /*
@@ -76,10 +82,12 @@ class CalculatorForActions implements Calculator {
                     System.out.println(ZERO_DIVIDER_EXCEPTION_EN);
                     value2 = this.getEnteredFirstValue();
                 }
-                calculationResult = divisionOperation(value1, value2);
+                doubleCalculationResult = divisionOperation(value1, value2);
+                floatCalculationResult = (float) doubleCalculationResult;
                 break;
         }
         System.out.println(CALCULATION_RESULTS_EN);
-        System.out.println(value1 + " " + operation + " " + value2 + " = " + calculationResult);
+        System.out.println("Float value: " + value1 + " " + operation + " " + value2 + " = " + floatCalculationResult);
+        System.out.println("Double value: " + value1 + " " + operation + " " + value2 + " = " + doubleCalculationResult);
     }
 }

@@ -1,5 +1,7 @@
 package com.emerline.sandbox;
 
+import java.math.BigDecimal;
+
 public interface Calculator {
     String GET_DOUBLE_SECOND_VALUE_EN = "Enter the first value. The decimal value should have a dot separator";
     String GET_DOUBLE_FIRST_VALUE_EN = "Enter the second value. The decimal value should have a dot separator";
