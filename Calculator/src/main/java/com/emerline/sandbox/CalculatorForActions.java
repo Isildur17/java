@@ -69,6 +69,9 @@ class CalculatorForActions implements Calculator {
                 calculationResult = multiplicationOperation(value1, value2);
                 break;
             case "/":
+                /*
+                    Fixing of the division by zero defect that led to the Infinity result
+                 */
                 while (value2 == 0) {
                     System.out.println(ZERO_DIVIDER_EXCEPTION_EN);
                     value2 = this.getEnteredFirstValue();
