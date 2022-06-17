@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="junit.gradle" type="repository">
+    <properties maven-id="org.junit:junit-gradle:5.0.0-ALPHA" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/junit-gradle-5.0.0-ALPHA.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/junit-gradle-5.0.0-ALPHA-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/junit-gradle-5.0.0-ALPHA-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

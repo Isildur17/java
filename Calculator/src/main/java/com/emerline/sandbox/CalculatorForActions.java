@@ -1,6 +1,5 @@
 package com.emerline.sandbox;
 
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 class CalculatorForActions implements Calculator {
